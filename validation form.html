@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   
+      <head>
+         <title>HTML Forms</title>
+      <p align="center" style="font-family:verdana;font-size:30px;">Enter your details:</p>
+      <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["name"]["Email"]["Pin"].value;
+            if (x == null || x == "")
+			{
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+		
+		</script>
+		<style>
+		label{
+         display: inline-block;
+         width: 150px;
+         text-align: center;
+        }   
+        </style>
+		</head>
+		
+        <body style="background-color:white">
+		
+        <form name="myForm" action="js"
+          onsubmit="return validateForm()" method="get" autocomplete="off" align="center">
+		  <label>
+		 User Name: <input type="text" name="name" maxlength="10" autocomplete="off" required="">
+         <br>
+		 Father Name: <input type="text" name="name" maxlength="10" autocomplete="off" required="">
+         <br>
+		 Mother Name: <input type="text" name="name" maxlength="10" autocomplete="off" required="">
+         <br>
+		 DOB: <input type="text" name="name" maxlength="10" autocomplete="off" required="">
+         <br>
+         Email:  <input type="text" name="Email" maxlength="20" autocomplete="off" required="" >
+         <br>
+         Phone number: <input type="integer" name="Pin" maxlength="10" autocomplete="off" required="">
+		 <br>
+		 city:      <select name="city" id="city">
+		               <option value="coimbatore">covai</option>
+					   <option value="tirupur">tirupur</option>	
+                    </select>					   
+         <br>
+		 male:      <input type="checkbox" >
+		 <br>
+		 female:    <input type="checkbox" >
+         <br>
+		 foreign:   <input type="radio" >
+		 <br>
+         adress:    <input type="text">       
+         <br>
+		 </label>
+         <br>
+         <button type="sumbit"   onclick=if(x!=null)"alert('You have registered successfully!')" value="sumbit">Register</button>
+         <button type="reset">reset</reset>s 
+	  </form>
+   </body>
+</html>

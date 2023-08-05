@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>
+website
+</title>
+<style>
+*
+{
+	text-align:center;
+	color:red;
+	font-size:200%;
+}
+#p
+{
+	text-align:center;
+	color:white;
+	font-size:200%;
+	text-transform:capitalize;
+}
+.class
+{
+	text-align:center;
+	color:white;
+	font-size:200%;
+	text-transform:lowercase;
+}
+h1,h2
+{
+	text-align:center;
+	color:white;
+	font-size:300%;
+	text-decoration:overline underline;
+	text-shadow: 3px 3px white;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	border-style:outset;
+}
+</style>
+</head>
+</html>
+
+	

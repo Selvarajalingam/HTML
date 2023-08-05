@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Passing an Array to the function</title>
+<script type="text/javascript"> 
+function display(ar)
+{ 
+document.write("The contents of the array are..."+"<br>"); 
+i=0;
+for(i in a)
+{
+document.write(a[i]+"<br>"); 
+i++;
+}
+}
+</script>
+</head>
+<body>
+<center>
+<script type="text/javascript"> 
+var n=prompt("Enter Array Length : ");
+
+var a=new Array(10);
+
+for(var i=0;i<n;i++)
+{
+    a[i]=i;
+}
+
+for(var i=0;i<n;i++)
+{
+    document.write(a[i]+" ");
+} 
+</script>
+</center>
+</body>
+</html>

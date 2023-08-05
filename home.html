@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   
+      <head>
+         <title>HTML Forms</title>
+      <p align="center" style="font-family:verdana;font-size:30px;">Enter your details:</p>
+      <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["name"]["Email"]["Phone number"]["Father name"]["Mother name"]["DOB"].value;
+            if (x == null || x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+		
+		</script>
+		<style>
+		   
+        </style>
+		</head>
+		<form name="myForm" action="js"
+          onsubmit="return validateForm()" method="get" autocomplete="off" align="center">
+		 User Name:<br><input type="text" name="name" maxlength="10" autocomplete="off" required="">
+         <br><br>
+		 Father Name:<br><input type="text" name="Father name" maxlength="10" autocomplete="off" required="">
+         <br>
+		 Mother Name:<br><input type="text" name="Mother name" maxlength="10" autocomplete="off" required="">
+         <br>
+		 DOB:<br><input type="integer" name="DOB" maxlength="10" autocomplete="off" required="">
+         <br>
+         Email:<br><input type="text" name="Email" maxlength="20" autocomplete="off" required="" >
+         <br>
+         Phone number:<br><input type="integer" name="Phone number" maxlength="10" autocomplete="off" required="">
+		 <br>
+		 <br>
+         <button type="sumbit"   onclick=if(x!=null)"alert('You have registered successfully!')" value="sumbit">Register</button>
+         <button type="reset">reset</reset> 
+	  </form>
+   </body>
+</html>
